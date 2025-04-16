@@ -17,6 +17,9 @@ on:
         options:
           - Male
           - Female
+      married:
+        description: 'Is Married?'
+        type: boolean
 
         
 jobs:
@@ -32,3 +35,11 @@ jobs:
 
       - name: Gender
         run: echo ${{ inputs.gender }}
+
+      - name: Married
+        run: echo ${{ inputs.married }}
+
+
+
+
+        
